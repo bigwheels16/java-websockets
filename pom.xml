@@ -1,0 +1,14 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.jkbff.saca</groupId>
+    <artifactId>java-websockets</artifactId>
+    <version>1</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -27,10 +27,10 @@ class CharacterLookupService {
             JSONObject json = new JSONObject(result);
             String name = json.getJSONArray("character_list").getJSONObject(0).getJSONObject("name").getString("first");
             String characterId = json.getJSONArray("character_list").getJSONObject(0).getString("character_id");
-            String faction_id = json.getJSONArray("character_list").getJSONObject(0).getString("character_id");
+            String factionId = json.getJSONArray("character_list").getJSONObject(0).getString("faction_id");
             String worldId = json.getJSONArray("character_list").getJSONObject(0).getString("world_id");
 
-            Player player = new Player(name, characterId, getWorld(worldId), getFaction(faction_id));
+            Player player = new Player(name, characterId, getWorld(worldId), getFaction(factionId));
             return player;
         } catch (IOException e) {
             e.printStackTrace();
